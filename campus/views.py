@@ -93,3 +93,13 @@ def claim_item(request, pk):
     item.save()
     messages.success(request, 'Item claimed successfully!')
     return redirect('lost_found')
+@login_required
+def delete_item(request, pk):
+    item = get_object_or_404(LostAndFound, pk=pk)
+
+    # শুধু admin delete করতে পারবে
+    if request.user.is_superuser:
+        item.delete()
+        messages.success(request, 'Item deleted successfully!')
+
+    return redirect('lost_found')

@@ -10,4 +10,5 @@ urlpatterns = [
     path('lost-found/', views.lost_found, name='lost_found'),
     path('lost-found/report/', views.report_lost, name='report_lost'),
     path('lost-found/<int:pk>/claim/', views.claim_item, name='claim_item'),
+    path('lost-found/<int:pk>/delete/', views.delete_item, name='delete_item'),
 ]
