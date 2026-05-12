@@ -95,4 +95,5 @@ ALLOWED_HOSTS = [
 
 CSRF_TRUSTED_ORIGINS = [
     'https://campus-management-system-production.up.railway.app',
+    'https://campus-management-system-production-5e47.up.railway.app',
 ]
