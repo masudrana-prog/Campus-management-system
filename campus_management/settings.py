@@ -89,3 +89,10 @@ LOGOUT_REDIRECT_URL = '/users/login/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+ALLOWED_HOSTS = [
+    'campus-management-system-production.up.railway.app',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://campus-management-system-production.up.railway.app',
+]
