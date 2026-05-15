@@ -89,7 +89,7 @@ LOGOUT_REDIRECT_URL = '/users/login/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'campus-management-system-production.up.railway.app',
